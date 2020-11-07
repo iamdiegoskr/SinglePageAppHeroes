@@ -1,1 +1,20 @@
-<p>heroes works!</p>
+<h1>Héroes <span>Marvel y DC</span> </h1>
+<hr>
+<!--
+    2 formas para insertar la imagen
+
+    1. src="{{heroe.img}}"
+    2. [src]="heroe.img" los corchetes indican que angular lo va a manejar
+-->
+<div class="card-columns">
+    <div class="card animated fadeIn" *ngFor="let heroe of myheroes">
+        <img [src]="heroe.img" class="card-img-top" [alt]="heroe.nombre">
+        <div class="card-body">
+            <h5 class="card-title"> {{heroe.nombre}} </h5>
+            <p class="card-text"> {{heroe.bio}} </p>
+            <p class="card-text"><small class="text-muted"> {{heroe.aparicion}} </small></p>
+            <!-- <button type="button" class="btn btn-outline-danger btn-block">Ver más...</button> -->
+            <a href="#" class="btn btn-outline-danger btn-block">Ver más...</a>
+        </div>
+    </div>
+</div>

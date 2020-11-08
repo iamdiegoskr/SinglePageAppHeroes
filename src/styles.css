@@ -25,6 +25,7 @@
     margin-top: 80px;
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .heroe-detail .heroe-detail-image {
@@ -104,4 +105,16 @@
 
 .fadeIn {
     animation-name: fadeIn;
+}
+
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 700px) {
+    .heroe-detail .heroe-detail-image,
+    .heroe-detail .heroe-detail-information {
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
 }

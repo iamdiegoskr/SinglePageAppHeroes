@@ -1,1 +1,11 @@
-<p>heroe-detail works!</p>
+<section class="heroe-detail animated fadeIn fast">
+    <div class="heroe-detail-image">
+        <span class="heroe-home"> {{heroe.casa}} </span>
+        <img [src]="heroe.img" alt="">
+    </div>
+    <div class="heroe-detail-information">
+        <h2> {{heroe.nombre}} </h2>
+        <p class="bio"> {{heroe.bio}} </p>
+        <p class="date"> {{heroe.aparicion}} </p>
+    </div>
+</section>

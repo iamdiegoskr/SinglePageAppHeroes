@@ -21,6 +21,61 @@
     text-overflow: ellipsis;
 }
 
+.heroe-detail {
+    margin-top: 80px;
+    width: 100%;
+    display: flex;
+}
+
+.heroe-detail .heroe-detail-image {
+    position: relative;
+    width: 40%;
+}
+
+.heroe-detail .heroe-detail-image span {
+    position: absolute;
+    display: inline-block;
+    width: 120px;
+    height: auto;
+    padding: 4px 0px;
+    background: #c53841;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center;
+    left: calc(50% - 60px);
+    top: calc(0% - 36px);
+}
+
+.heroe-detail .heroe-detail-information {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heroe-detail .heroe-detail-information h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.heroe-detail .heroe-detail-information .bio {
+    line-height: 1.563rem;
+    margin-bottom: 20px;
+}
+
+.heroe-detail .heroe-detail-information .date {
+    font-size: 1.1rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: #32477b;
+}
+
+.heroe-detail .heroe-detail-image img {
+    width: 100%;
+}
+
 
 /*Animaciones de animated.css*/
 

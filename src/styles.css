@@ -33,7 +33,39 @@
     width: 40%;
 }
 
-.heroe-detail .heroe-detail-image span {
+.heroe-detail-image .btn-back {
+    width: 50%;
+    height: auto;
+    padding: 8px 0;
+    border: none;
+    background-color: #3a6096;
+    color: #fff;
+    margin: 16px auto;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.icon-container {
+    margin-top: 20px;
+}
+
+.icon-container img {
+    width: 80px;
+    height: 80px;
+}
+
+.heroe-detail-image .btn-back span {
+    display: inline-block;
+    width: 18px;
+    height: 12px;
+    margin-right: 8px;
+    background-image: url('./assets/icons/back.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.heroe-detail .heroe-detail-image span.heroe-home {
     position: absolute;
     display: inline-block;
     width: 120px;

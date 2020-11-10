@@ -2,10 +2,16 @@
     <div class="heroe-detail-image">
         <span class="heroe-home"> {{heroe.casa}} </span>
         <img [src]="heroe.img" alt="">
+        <a class="btn btn-back btn-block" [routerLink]="['/heroes']"><span></span>Regresar</a>
     </div>
     <div class="heroe-detail-information">
         <h2> {{heroe.nombre}} </h2>
         <p class="bio"> {{heroe.bio}} </p>
         <p class="date"> {{heroe.aparicion}} </p>
+        <div class="icon-container">
+            <!-- <img [src]="heroe.casa== 'Marvel' ? 'assets/icons/marvelskr.png' : 'assets/icons/dc.png'" alt="image home heroe"> -->
+            <img *ngIf="heroe.casa == 'DC'" src="assets/icons/dc.png" alt="">
+            <img *ngIf="heroe.casa == 'Marvel'" src="assets/icons/marvelskr.png" alt="">
+        </div>
     </div>
 </section>

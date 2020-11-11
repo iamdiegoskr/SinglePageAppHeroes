@@ -6,7 +6,7 @@
             <h5 class="card-title"> {{heroe.nombre}} </h5>
             <p class="card-text"> {{heroe.bio}} </p>
             <p class="card-text"><small class="text-muted"> {{heroe.aparicion}} </small></p>
-            <button type="button" class="btn btn-outline-danger btn-block" (click)="navigateHero(i)">Ver más...</button>
+            <button type="button" class="btn btn-outline-danger btn-block" (click)="navigateHero(heroe.id)">Ver más...</button>
         </div>
     </div>
 </div>

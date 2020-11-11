@@ -19,6 +19,6 @@
         </div>
     </div> -->
 
-    <app-heroe-tarjeta *ngFor="let heroe of heroesFilter" [heroe]="heroe" [IdHeroe]="heroe.id"></app-heroe-tarjeta>
+    <app-heroe-tarjeta *ngFor="let heroe of heroesFilter" [heroe]="heroe" [IdHeroe]="heroe.id" (heroeSelected)="navigateHero($event)"></app-heroe-tarjeta>
 
 </div>

@@ -25,6 +25,7 @@ export class HeroesComponent implements OnInit {
     this.myheroes = this._heroesSerive.getHeroes();
   }
 
+  
   navigateHero(id:number){
     this.router.navigate(['/heroe-detail', id]);
   }

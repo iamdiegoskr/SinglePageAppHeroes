@@ -2,6 +2,6 @@
 <hr>
 <div class="card-columns">
 
-    <app-heroe-tarjeta *ngFor="let heroe of myheroes" [heroe]="heroe" [IdHeroe]="heroe.id"></app-heroe-tarjeta>
+    <app-heroe-tarjeta (heroeSelected)="navigateHero($event)" [heroe]="heroe" [IdHeroe]="heroe.id" *ngFor="let heroe of myheroes"></app-heroe-tarjeta>
 
 </div>

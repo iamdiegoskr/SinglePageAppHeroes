@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 //importo el servicio si quiero utilizarlo
 import { HeroesService, Heroe } from '../../services/heroes.service';
 //importo el router necesario para poder moverme al componente de heroe-detail
-import { Router } from '@angular/router'
+import { Router } from '@angular/router';
 
 
 @Component({

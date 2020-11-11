@@ -1,4 +1,13 @@
 <h2 class="mb-4">Buscador : <span>  {{termino}} </span> </h2>
+
+<div class="row animated fadeIn fast" *ngIf="heroesFilter.length == 0">
+    <div class="col-12">
+        <div class="alert alert-danger" role="alert">
+            <p class="my-0">No existen resultados con el termino ingresado</p>
+        </div>
+    </div>
+</div>
+
 <div class="card-columns">
     <div class="card animated fadeIn" *ngFor="let heroe of heroesFilter, let i = index">
         <img [src]="heroe.img" class="card-img-top" [alt]="heroe.nombre">
